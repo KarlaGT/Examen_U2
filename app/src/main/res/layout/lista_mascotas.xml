@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_mascota"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textColor="#575656"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_peso"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="0dp"
+                android:text="Peso"
+                android:textColor="#575656"/>
+
+            <TextView
+                android:id="@+id/txt_raza"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:text="Raza"
+                android:textColor="#575656"/>
+
+            <TextView
+                android:id="@+id/txt_edad"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:textColor="#575656"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/txt_nacimiento"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:textColor="#575656"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/txt_tamano"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:textColor="#575656"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/txt_sexo"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:textColor="#575656"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/txt_vacunado"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:textColor="#575656"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
